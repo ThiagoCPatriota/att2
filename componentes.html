@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Toxicidade de Chumbo</title>
+    <link rel="stylesheet" href="stylecomp.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Teste de Nível de Chumbo</h2>
+    <p class="info">Conforme nossos critérios, concentrações superiores a <strong>10g por litro</strong> de sangue são tóxicas.</p>
+    
+    <form id="formChumbo">
+        <label for="volumeSangue">Volume de Sangue (Litros):</label>
+        <input type="number" id="volumeSangue" value="7" title="Valor pré-determinado">
+
+        <label for="totalChumbo">Quantidade Total de Chumbo (Gramas):</label>
+        <input type="number" id="totalChumbo" placeholder="Ex: 75" required>
+
+        <button type="submit">Calcular Nível</button>
+    </form>
+
+    <div id="resultado" class="result"></div>
+</div>
+</body>
+</html>
