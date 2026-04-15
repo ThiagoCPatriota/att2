@@ -1,0 +1,40 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ececec;
+    font-family: sans-serif;
+}
+
+#calculadora {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 220px;
+}
+
+#visor {
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+    border-radius: 4px;
+    min-height: 25px;
+}
+
+#teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 15px 0;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

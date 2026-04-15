@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Segurança - Baterias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>Verificação Prévia: Manuseio de Baterias</h1>
+    <p>Responda a todas as perguntas abaixo antes de iniciar a operação.</p>
+
+    <form onsubmit="verificar(event)">
+
+        <div class="pergunta">
+
+            <p><strong>1.</strong> A área de trabalho possui ventilação adequada e extintores próximos?</p>
+
+            <label>
+                <input type="radio" name="q1" value="sim" required>
+                Sim
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="nao" id="erro1">
+                Não
+            </label>
+
+        </div>
+
+        <div class="pergunta">
+
+            <p><strong>2.</strong> Você está usando os EPIs corretos para a tarefa (luvas, óculos)?</p>
+
+            <label>
+                <input type="radio" name="q2" value="sim" required>
+                Sim
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="nao" id="erro2">
+                Não
+            </label>
+
+        </div>
+
+        <div class="pergunta">
+
+            <p><strong>3.</strong> A bateria será conectada ao carregador ANTES de ligar na energia?</p>
+
+            <label>
+                <input type="radio" name="q3" value="sim" required>
+                Sim
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="nao" id="erro3">
+                Não
+            </label>
+        </div>
+
+        <div class="pergunta">
+            <p><strong>4.</strong> Você possui equipamentos para elevar a bateria sem puxar pelos cabos?</p>
+
+            <label>
+                <input type="radio" name="q4" value="sim" required>
+                Sim
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="nao" id="erro4">
+                Não
+            </label>
+
+        </div>
+
+        <div class="pergunta">
+
+            <p><strong>5.</strong> A bateria e os cabos estão sem desgastes, rachaduras ou vazamentos?</p>
+
+            <label>
+                <input type="radio" name="q5" value="sim" required>
+                Sim
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="nao" id="erro5">
+                Não
+            </label>
+
+        </div>
+
+        <div class="pergunta">
+
+            <p><strong>6.</strong> A bateria está livre de cheiro ruim (ovo podre) ou inchaço?</p>
+
+            <label>
+                <input type="radio" name="q6" value="sim" required>
+                Sim
+            </label>
+
+            <label>
+                <input type="radio" name="q6" value="nao" id="erro6">
+                Não
+            </label>
+
+        </div>
+
+        <div class="pergunta">
+
+            <p><strong>7.</strong> Os materiais para limpar derramamentos (kit de emergência) estão próximos?</p>
+
+            <label>
+                <input type="radio" name="q7" value="sim" required>
+                Sim
+            </label>
+
+            <label>
+                <input type="radio" name="q7" value="nao" id="erro7">
+                Não
+            </label>
+
+        </div>
+
+        <button type="submit">Verificar Segurança</button>
+    </form>
+
+    <div id="resultado"></div>
+
+</body>
+
+</html>

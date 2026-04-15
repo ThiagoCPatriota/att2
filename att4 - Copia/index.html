@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Titulo Normal</h1>
+
+    <script>
+        var h1 = document.querySelector("h1")
+
+        h1.addEventListener("mouseover", function () {
+            h1.textContent = "Titulo Alterado";
+            h1.style.color = "red";
+            h1.style.fontFamily = "Arial";
+        });
+
+        h1.addEventListener("mouseout", function () {
+            h1.textContent = "Titulo Normal";
+        })
+
+
+    </script>
+</body>
+
+</html>

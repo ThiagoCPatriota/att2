@@ -20,8 +20,18 @@ document.getElementById('formChumbo').addEventListener('submit', function (event
     }
 
 
-    let pares = [2, 4, 6, 8, 10];
-    for (let i = 0; i < pares.length; i++) {
-        console.log(pares[i]);
-    }
+});
+
+let pares = [2, 4, 6, 8, 10];
+for (let i = 0; i < pares.length; i++) {
+    console.log(pares[i]);
+}
+
+for (let item of pares) {
+    console.log(item);
+};
+
+let soma = 0;
+pares.forEach(function (numero) {
+    soma += numero;
 });
